@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
-import { staticGalleryData } from "@/components/data/gallaryData";
+import { staticGalleryData } from "@/components/Home/Categories/gallaryData";
 
 interface GalleryModalProps {
   itemId: string | number | null;

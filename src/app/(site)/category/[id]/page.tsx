@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { staticGalleryData } from "@/components/data/gallaryData";
+import { staticGalleryData } from "@/components/Home/Categories/gallaryData";
 
 interface PageProps {
   params: Promise<{ id: string }>;
