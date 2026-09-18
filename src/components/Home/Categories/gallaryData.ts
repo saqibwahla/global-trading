@@ -76,6 +76,8 @@ export interface GalleryItem {
         {src: "/images/gallery/cat5-3.jpg", type: "Short Grain Rice"},
         {src: "/images/gallery/cat5-4.jpg", type: "Short Grain Rice"},
         {src: "/images/gallery/cat5-5.jpg", type: "Short Grain Rice"},
+        {src: "/images/gallery/cat5-6.jpg", type: "Short Grain Rice"},
+
       ],
     },
     6: {
