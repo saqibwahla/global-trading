@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import data from "./categoryData";
 import SingleItem from "./SingleItem";
-import GalleryModal from "@/components/GalleryModal";
+import GalleryModal from "./GalleryModal";
 
 const Categories = () => {
     const [activeId, setActiveId] = useState<string | number | null>(null);
