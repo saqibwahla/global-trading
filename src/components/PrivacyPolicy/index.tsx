@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Shield, Clock, FileText, Lock, Globe, Eye } from 'lucide-react';
+import Breadcrumb from '../Common/Breadcrumb';
 
 export const metadata = {
   title: 'Privacy Policy | GlobalTrade Co.',
@@ -8,23 +9,10 @@ export const metadata = {
 
 export default function PrivacyPolicy() {
   return (
+    <>
+    <Breadcrumb title={"Privacy Policy"} pages={["Privacy Policy"]} />
     <div className="bg-slate-50 text-slate-800 min-h-screen font-sans">
-      {/* Editorial Header Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white pt-12 pb-16 px-6 lg:px-12 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 text-blue-400 font-semibold tracking-wider uppercase text-xs sm:text-sm bg-blue-950/60 px-3 py-1 rounded-full border border-blue-900/50 w-fit">
-            <Shield size={14} /> Legal Documentation
-          </div>
-          <h1 className="text-4xl lg:text-5xl font-extrabold mt-4 mb-4 tracking-tight max-w-4xl">
-            Privacy Policy & Data Security
-          </h1>
-          <div className="flex items-center gap-4 text-sm text-slate-400">
-            <span className="flex items-center gap-1.5"><Clock size={14} /> Effective Date: September 18, 2026</span>
-            <span>•</span>
-            <span>Version 2.4</span>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Main Legal Content Splitscreen */}
       <section className="pt-10 pb-16 lg:pb-24 px-6 lg:px-12 max-w-7xl mx-auto">
@@ -140,5 +128,6 @@ export default function PrivacyPolicy() {
         </div>
       </section>
     </div>
+    </>
   );
 }

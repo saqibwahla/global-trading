@@ -60,10 +60,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 w-full z-9999 bg-white transition-all ease-in-out duration-300 ${
-        stickyMenu && "shadow"
-      }`}
-    >
+    className={`fixed left-0 top-0 w-full z-9999 bg-white/70 backdrop-blur-md transition-all ease-in-out duration-300 ${
+      stickyMenu && "shadow"
+    }`}
+  >
+  
       <div className="max-w-[full] mx-4 px-4 sm:px-7.5 xl:px-0">
         {/* <!-- header top start --> */}
         <div
@@ -77,8 +78,8 @@ const Header = () => {
               <Image
                 src="/images/logo/logo.jpeg"
                 alt="Butt Three Star Trading Co."
-                width={100}
-                height={60}
+                width={150}
+                height={100}
               />
             </Link>
 
@@ -91,7 +92,7 @@ const Header = () => {
                       >
                         <Link
                           href={menuItem.path}
-                          className={`hover:underline text-custom-lg font-medium text-dark flex ${
+                          className={`hover:underline text-custom-sm font-medium text-dark flex ${
                             stickyMenu ? "xl:py-4" : "xl:py-6"
                           }`}
                         >
