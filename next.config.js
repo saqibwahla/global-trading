@@ -2,13 +2,10 @@
 const nextConfig = {
     output: 'standalone',
     
-    // This explicitly bypasses Turbopack for production compilation
-    // while satisfying the need for a stable Webpack build process
-    experimental: {
-      turbo: {
-        // If you need specific rule configurations later, they go here
-      }
-    }
+    // Next.js 16 handles Turbopack rules at the top level
+    turbopack: {
+      // Keep this block clear to let standard styling pass through cleanly
+    },
   };
   
   module.exports = nextConfig;
